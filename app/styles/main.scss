@@ -1,0 +1,17 @@
+@import "_vars";
+
+@import "atoms/buttons";
+@import "components/header";
+@import "views/home";
+
+body {
+    background: #f5f5f5;
+}
+
+a{
+    color: $primary;
+}
+
+.main{
+    padding: 1rem 0;
+}

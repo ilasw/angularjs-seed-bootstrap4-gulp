@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>My AngularJS App</title>
+	<meta name="description" content="">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="dist/css/main.css">
+
+	<!-- Scripts -->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="dist/js/scripts.js"></script>
+</head>
+<body>
+
+<!-- header -->
+<header ng-include="'views/components/head.html'"></header>
+
+<!-- current view -->
+<section class="main">
+	<div ng-view></div>
+</section>
+
+<!-- footer -->
+<footer ng-include="'views/components/footer.html'"></footer>
+
+</body>
+</html>
